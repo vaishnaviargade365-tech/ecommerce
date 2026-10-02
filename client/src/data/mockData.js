@@ -1,0 +1,157 @@
+// Initial mock data for frontend demonstration and testing
+// This data allows the frontend to run fully interactively before the backend is connected.
+
+export const initialCategories = [
+  { _id: 'cat_1', name: 'Electronics', description: 'Smart devices, audio gear, and gadgets' },
+  { _id: 'cat_2', name: 'Fashion', description: 'Trendy apparel, jackets, and everyday wear' },
+  { _id: 'cat_3', name: 'Footwear', description: 'Athletic, casual, and formal shoes' },
+  { _id: 'cat_4', name: 'Accessories', description: 'Watches, bags, and sunglasses' },
+  { _id: 'cat_5', name: 'Home & Kitchen', description: 'Modern appliances and home essentials' },
+];
+
+export const initialProducts = [
+  {
+    _id: 'prod_1',
+    name: 'Wireless Noise-Canceling Headphones',
+    description: 'Premium over-ear Bluetooth headphones with active noise cancellation, 30-hour battery life, and crystal-clear microphone audio.',
+    price: 3499,
+    category: 'cat_1',
+    categoryName: 'Electronics',
+    stock: 12,
+    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=60',
+  },
+  {
+    _id: 'prod_2',
+    name: 'Smart Fitness Tracker Watch',
+    description: 'Water-resistant smartwatch featuring 24/7 heart rate monitor, AMOLED touch display, sleep analysis, and GPS tracking.',
+    price: 2199,
+    category: 'cat_1',
+    categoryName: 'Electronics',
+    stock: 4, // low stock test
+    image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=60',
+  },
+  {
+    _id: 'prod_3',
+    name: 'Classic White Leather Sneakers',
+    description: 'Minimalist white sneakers crafted from breathable vegan leather with memory foam insoles for all-day comfort.',
+    price: 1899,
+    category: 'cat_3',
+    categoryName: 'Footwear',
+    stock: 18,
+    image: 'https://images.unsplash.com/photo-1549298916-b41d501d3772?w=800&auto=format&fit=crop&q=60',
+  },
+  {
+    _id: 'prod_4',
+    name: 'Running Pro Cushion Shoes',
+    description: 'High-performance lightweight running shoes with responsive shock absorption and high-traction rubber outsole.',
+    price: 2599,
+    category: 'cat_3',
+    categoryName: 'Footwear',
+    stock: 0, // Out of stock test
+    image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=60',
+  },
+  {
+    _id: 'prod_5',
+    name: 'Vintage Slim-Fit Denim Jacket',
+    description: 'Timeless washed denim jacket with premium brass buttons, chest flap pockets, and durable reinforced stitching.',
+    price: 2299,
+    category: 'cat_2',
+    categoryName: 'Fashion',
+    stock: 9,
+    image: 'https://images.unsplash.com/photo-1576995853123-5a10305d93c0?w=800&auto=format&fit=crop&q=60',
+  },
+  {
+    _id: 'prod_6',
+    name: 'Organic Cotton Everyday Hoodie',
+    description: 'Cozy and relaxed-fit pullover hoodie made from 100% combed organic cotton with soft fleece interior.',
+    price: 1499,
+    category: 'cat_2',
+    categoryName: 'Fashion',
+    stock: 15,
+    image: 'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=800&auto=format&fit=crop&q=60',
+  },
+  {
+    _id: 'prod_7',
+    name: 'Minimalist Chronograph Watch',
+    description: 'Elegant stainless steel dress watch featuring quartz movement, scratch-resistant sapphire glass, and a genuine leather strap.',
+    price: 3999,
+    category: 'cat_4',
+    categoryName: 'Accessories',
+    stock: 6,
+    image: 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=60',
+  },
+  {
+    _id: 'prod_8',
+    name: 'Compact Espresso Coffee Maker',
+    description: '15-bar Italian pump espresso machine with integrated milk frothing wand for rich cappuccinos and lattes.',
+    price: 4999,
+    category: 'cat_5',
+    categoryName: 'Home & Kitchen',
+    stock: 8,
+    image: 'https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?w=800&auto=format&fit=crop&q=60',
+  },
+];
+
+export const initialOrders = [
+  {
+    _id: 'ORD-98231',
+    user: 'usr_cust_1',
+    customerName: 'Vaishnavi Argade',
+    customerEmail: 'vaishnavi@example.com',
+    createdAt: '2026-10-01T10:30:00Z',
+    totalAmount: 5698,
+    status: 'Delivered',
+    paymentMethod: 'Cash on Delivery',
+    shippingAddress: {
+      fullName: 'Vaishnavi Argade',
+      phone: '9876543210',
+      address: '42 MG Road, Koregaon Park',
+      city: 'Pune',
+      state: 'Maharashtra',
+      pincode: '411001',
+    },
+    products: [
+      {
+        product: 'prod_1',
+        name: 'Wireless Noise-Canceling Headphones',
+        price: 3499,
+        quantity: 1,
+        image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=60',
+      },
+      {
+        product: 'prod_2',
+        name: 'Smart Fitness Tracker Watch',
+        price: 2199,
+        quantity: 1,
+        image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=60',
+      },
+    ],
+  },
+  {
+    _id: 'ORD-98232',
+    user: 'usr_cust_1',
+    customerName: 'Vaishnavi Argade',
+    customerEmail: 'vaishnavi@example.com',
+    createdAt: '2026-10-02T08:15:00Z',
+    totalAmount: 1899,
+    status: 'Pending',
+    paymentMethod: 'Cash on Delivery',
+    shippingAddress: {
+      fullName: 'Vaishnavi Argade',
+      phone: '9876543210',
+      address: '42 MG Road, Koregaon Park',
+      city: 'Pune',
+      state: 'Maharashtra',
+      pincode: '411001',
+    },
+    products: [
+      {
+        product: 'prod_3',
+        name: 'Classic White Leather Sneakers',
+        price: 1899,
+        quantity: 1,
+        image: 'https://images.unsplash.com/photo-1549298916-b41d501d3772?w=800&auto=format&fit=crop&q=60',
+      },
+    ],
+  },
+];
