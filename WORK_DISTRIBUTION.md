@@ -100,3 +100,5 @@ Day 5: Integration & End-to-End Testing
    - `git checkout -b feature/server-auth`
    - `git checkout -b feature/client-storefront`
 3. **Daily Sync**: Always run `git pull origin main` before starting new work.
+git config --global user.name "Vaishnavi Argade"
+
